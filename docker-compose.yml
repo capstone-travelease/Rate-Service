@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  gateway:
+    container_name: help-service
+    image: coderbillzay/help-service
+    ports:
+      - '56273:56273'
+    volumes:
+      - ./:/server
+    restart: always
